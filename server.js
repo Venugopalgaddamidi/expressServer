@@ -10,7 +10,7 @@ dotenv.config();
 app.use(express.json());
 
 dns.setServers(["1.1.1.1", "8.8.8.8"]);
-
+app.use(express.json());
 app.use(studentRoute);
 app.use(authRoute);
 
